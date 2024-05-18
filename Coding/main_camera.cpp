@@ -52,7 +52,7 @@ int main()
 
     // build and compile our shader zprogram
     // ------------------------------------
-    Shader ourShader("6.2.coordinate_systems.vs", "6.2.coordinate_systems.fs");
+    Shader ourShader("C:/learnopengl/Coding/6.2.coordinate_systems.vs", "C:/learnopengl/Coding/6.2.coordinate_systems.fs");
 
     //setup vertex data
     float vertices[] = {
@@ -141,7 +141,7 @@ int main()
 
     int width, height, nrChannels;
 
-    unsigned char* data = stbi_load("C:/learnopengl/resource/container.jpg", &width, &height, &nrChannels, 0);
+    unsigned char* data = stbi_load("C:/learnopengl/Coding/resource/container.jpg", &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
